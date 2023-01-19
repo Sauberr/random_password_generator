@@ -1,11 +1,7 @@
 import random
+import string
 
-upper_letter = 'ZAQWSXCDERFVBGTYHNMJUIKLOP'
-lower_letter = 'zaqwsxcderfvbgtyhnmjuiklop'
-number = '1234567890'
-special_symbols = '/<>[]{}?.,!^'
-
-all_symbols = upper_letter + lower_letter + number + special_symbols
+all_symbols = string.ascii_letters + string.digits + string.punctuation
 
 length = int(input('Choose your password length: '))
 
